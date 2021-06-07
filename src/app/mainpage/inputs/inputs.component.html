@@ -1,0 +1,26 @@
+<div class="inputs-container">
+  <div class="imginpit-container input" [ngClass]="{'showlist': listFlag === true}">
+    <label for="img"> Select Image</label>
+    <div class="arrow-container">
+      <input class="input-element" type="text" id="img"
+      [value]="currentImage" (click)="onImagetagClick()">
+      <mat-icon [ngClass]="{'rotate-arrow': listFlag === true}">keyboard_arrow_up</mat-icon>
+    </div>
+
+    <ng-container *ngIf="listFlag">
+      <ul>
+        <ng-container *ngFor="let image of imgList">
+          <li class="img-url" (click)="onImageSelect(image.value)">
+            {{image.value}}
+          </li>
+        </ng-container>
+      </ul>
+    </ng-container>
+  </div>
+
+  <div class="titleinput-container input">
+    <label for="title"> Enter Title</label>
+    <input class="input-element" type="text" id="title"  #titleInput>
+  </div>
+
+</div>

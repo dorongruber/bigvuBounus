@@ -1,0 +1,67 @@
+.canvas-frame {
+  width: 680px;
+  height: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px 4px black;
+  border-radius: 15px;
+}
+
+.spinner-position {
+  position: absolute;
+  width: 100%;
+  padding-left: 0;
+}
+
+.canvas-element {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+img {
+  position: absolute;
+  z-index: 100;
+  width: 640px;
+  height: 360px;
+}
+
+.title-container {
+  display: flex;
+  position: relative;
+  z-index: 100;
+  justify-content: center;
+  width: 34%;
+  text-align: center;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.col-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 360px;
+}
+
+
+h1 {
+  font-family: "Inter-Bold";
+  width: fit-content;
+  color: black;
+}
+
+.image {
+  position: absolute;
+  left: 0;
+  width: 66%;
+  height: 360px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.title {
+  position: absolute;
+  right: 0;
+}

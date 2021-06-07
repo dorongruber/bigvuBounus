@@ -1,0 +1,41 @@
+<div id="canvasframe" class="canvas-frame">
+
+  <div class="canvas-element">
+    <ng-container *ngIf="imgurl !== null">
+      <ng-container *ngIf="isLoadingimg">
+        <div class="title-container spinner-position">
+          <div class="col-container">
+            <app-loading-spinner></app-loading-spinner>
+          </div>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="!isLoadingimg">
+        <div class="image"
+        [ngStyle]="{'background-image': getImageUrl()}"
+        id="img-container"></div>
+      </ng-container>
+
+      <!-- <ng-container *ngIf="title === null">
+
+        <div class="title-container">
+          <div class="col-container"></div>
+        </div>
+
+      </ng-container> -->
+
+    </ng-container>
+    <ng-container *ngIf="title !== null">
+      <div
+      class="title-container title">
+        <div class="col-container">
+          <ng-container *ngIf="isLoadingTitle">
+            <app-loading-spinner></app-loading-spinner>
+          </ng-container>
+          <ng-container *ngIf="!isLoadingTitle">
+            <h1>{{title}}</h1>
+          </ng-container>
+        </div>
+      </div>
+    </ng-container>
+    </div>
+</div>

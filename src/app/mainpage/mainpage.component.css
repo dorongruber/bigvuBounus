@@ -1,0 +1,59 @@
+.mainpage-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.headers-container {
+  display: flex;
+  justify-content: center;
+  background: aqua;
+  width: 100vw;
+}
+
+a {
+  margin: 0 .5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  margin: .5rem 0;
+  border-bottom: 2px solid white;
+}
+
+.inputs-container {
+  margin: .7rem 0;
+}
+
+.canvas-container {
+  text-align: center;
+}
+
+
+.white {
+  background: white;
+}
+
+.blue {
+  background: blue;
+}
+
+.canvas-main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.header:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.canvas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.inputs-container {
+  margin: .7rem 0;
+}

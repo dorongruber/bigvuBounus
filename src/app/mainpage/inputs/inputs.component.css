@@ -1,0 +1,84 @@
+.inputs-container {
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  font-family: "Inter";
+  font-size: x-small;
+  padding: .5rem;
+  box-sizing: border-box;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imginpit-container, .titleinput-container {
+  margin: .5rem;
+  border: 1.3px solid blue;
+  border-radius: 10px;
+  height: fit-content;
+  height: 20%;
+  width: 20%;
+  transition: height, width .5s;
+}
+
+/* .titleinput-container {
+  margin: .5rem;
+  border: 1.3px solid blue;
+  border-radius: 10px;
+  height: fit-content;
+} */
+
+ul {
+  list-style: none;
+  padding: 0 .5rem;
+  box-sizing: border-box;
+
+}
+
+.showlist {
+  height: 40%;
+  width: 29%;
+}
+
+input {
+  border-radius: 5px;
+  margin: 0 .4rem .4rem .4rem;
+  border-width: 0;
+}
+
+.input-element {
+  border-bottom: 1px solid rgb(118,118,118);
+}
+
+.img-url {
+  font-family: "Inter";
+  font-size: x-small;
+  cursor: pointer;
+  margin: .2rem 0;
+}
+
+.img-url:hover {
+  font-weight: 900;
+  color: blue;
+}
+
+.arrow-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+mat-icon {
+  margin: 0 .1em .1em .1em;
+  transition: transform .5s;
+}
+
+.rotate-arrow {
+  transform: rotateZ(180deg);
+}
