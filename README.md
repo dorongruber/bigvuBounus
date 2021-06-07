@@ -6,13 +6,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run "npm install" for node_module dependency libraries/modules installation.
 
-Run "ng add @nguniversal/express-engine --clientProject <name_of_currentProject>" to make this angular project to angular universal project.
-after adding "@nguniversal" , run "npm i @nguniversal/module-map-ngfactory-loader ts-loader -s",
-run "npm i @angular/platform-server -s".
-
-
-
-
 
 ## Development server
 
